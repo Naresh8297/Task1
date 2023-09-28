@@ -1,0 +1,335 @@
+
+body, h1, h2, p {
+    margin: 0;
+    padding-left: 100px; /* Add padding to the left side */
+    padding-right: 100px; /* Add padding to the right side */
+    margin: auto;
+    
+}
+html, body {
+    background-image: url('https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317_1280.jpg'); /* Replace with the actual path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-attachment: fixed; /* Fix the background in place */
+
+}
+
+
+/* Center the content within the container */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the container covers the entire viewport height */
+}
+.profile h2 p{
+    letter-spacing: normal;
+    font-size: normal;
+}
+section {
+    margin-top: -20px; /* Adjust the negative margin value to control the gap */
+    padding: 20px;
+}
+header {
+    background-color: #c2e26a;
+    padding: 10px 0;
+    
+}
+.navbar {
+    
+    padding-left: 20px; /* Add padding to the left side */
+    padding-right: 20px; /* Add padding to the right side */
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.navbar ul li {
+    display: inline;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 22px;
+    margin-right: 70px; /* Add margin to create spacing between navbar items */
+}
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    padding-left:57px;
+    padding-right: 0px;
+    padding-top: 15px;
+    margin-right: 43px;
+    background-color: #c2e26a ;
+}
+.second{
+    padding-left:57px;
+    padding-right: 0px;
+    padding-top: 15px;
+    margin-right: 43px;
+}
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #555;
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    /* width: 100%; */
+    color: rgb(244, 119, 119);
+    text-align: center;
+ 
+
+}
+.image-and-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+.left-image {
+    width: 200px; 
+    margin-right: 10px; 
+}
+.right-image {
+    width: 200px; 
+    margin-left: 10px; }
+.text-right {
+    flex-grow: -1; 
+}
+.text-left {
+    flex-grow: -1;
+}
+.gallery {
+    text-align: center;
+}
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.image {
+    margin: 90px; 
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.image img {
+    width: 140px; 
+    height: 140px;
+    object-fit: cover; 
+}
+.blinking-paragraph {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.blinking-testimonial-text {
+    display: inline-block;
+    animation: blink 4s infinite; 
+    font-size: 18px; 
+    font-family:'Brush Script MT', cursive; ;
+ 
+}
+
+.left-flower,
+.right-flower {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px; 
+    height: 100px;
+}
+
+.left-flower {
+    left: 2px;
+}
+
+.right-flower {
+    right: 2px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.contact {
+    margin-top: 20px;
+    padding: 10px; 
+    margin-left: 5px;
+    padding-left: 10px;
+}
+
+.contact-container {
+    background-color: #58d033; 
+    padding: 20px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.contact-image img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.contact-details {
+    flex-grow: 1; 
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact p {
+    text-align: center;
+    margin: 10px ;
+}
+
+.quick-links {
+    margin-top: 10px; 
+    text-align: center;
+    padding: 20px;
+}
+.quick-links h3 {
+    text-align: center;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links ul li:not(:last-child) {
+    border-bottom: 1.3px dotted #000; 
+    cursor: pointer;
+}
+.additional-links ul li:not(:last-child) {
+    border-bottom: 1.3px dotted #000; 
+    cursor: pointer;
+    margin-left: 10px;
+}
+.quick-links ul li a {
+    text-align-last: right;
+    text-decoration: none;
+    color: #000;
+    border-right: 1px dotted black;
+    padding-right: 10px; }
+
+.additional-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: right; }
+.content-container {
+    min-height: calc(100vh - 80px); 
+    padding-top: 20px; 
+}
+.nav-link {
+    background-color: transparent; 
+    border-radius: 0; 
+    color:  #c2e26a;; 
+    transition: all 0.3s ease; 
+}
+.nav-link:hover {
+    background-color: #333; 
+    border-radius: 10px; 
+    color: white; 
+    transform: scale(1.1);
+    padding: 8px;
+}
+.initial-capital-italic {
+    font-size: normal;
+}
+
+.initial-capital-italic::first-letter {
+    font-family: 'Brush Script MT', cursive;
+}
+#scrollToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #scrollToTopButton:hover {
+    background-color: #555;
+    transform: scale(1.1);
+  }
+
+.events-link {
+    position: relative; 
+  }
+  
+  
+  .events-link::after {
+    content: "▼"; 
+    margin-left: 5px; 
+    font-size: 16px; 
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+  
+ 
+  .events-link:hover::after {
+    content: "▼"; 
+  }
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #000; 
+    display: inline-block;
+    margin-right: 5px; 
+    cursor: pointer; 
+  }
+
+.hidden {
+    display: none; 
+    position: absolute;
+    background-color: #fff; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 5px; 
+  }
+    
+  
+
+
